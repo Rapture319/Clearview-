@@ -1,0 +1,18 @@
+[package]
+name = "clearview_engine"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+description = "Local-first metadata inspection, cleaning, and verification engine for Clearview Metadata Tool."
+
+[lib]
+name = "clearview_engine"
+crate-type = ["rlib", "cdylib", "staticlib"]
+
+[dependencies]
+# Milestone 1 uses pure Rust std for zero-dependency cross-platform foundation builds.
+# Planned Milestone 2-4 dependencies (GPL-3.0-compatible):
+# sha2 = "0.10"               # MIT OR Apache-2.0 (original file integrity hashing)
+# image = "0.25"              # MIT OR Apache-2.0 (image validation & pixel verification)
+# kamadak-exif = "0.5"        # BSD-2-Clause (EXIF inspection)
+# flutter_rust_bridge = "2"   # MIT (typed async Dart <-> Rust bridge)

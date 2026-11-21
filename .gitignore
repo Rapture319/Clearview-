@@ -1,0 +1,25 @@
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+app/.metadata
+
+# Native build outputs
+*.dll
+*.so
+*.dylib
+*.exe
+*.app
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
